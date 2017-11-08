@@ -107,6 +107,69 @@ En el núcleo atómico, cada protón o neutrón, con espín paralelo (+1/2), se 
 </p>
 <br>
 <img src="media/magnetizacion_neta.png" alt="imagen magnetización neta" class="img img-responsive">
+<p class="quote">
+  (a) Protones apuntando hacia abajo se cancelan con sus opuestos que apuntan hacia arriba. (b) Quedan cuatro protones sin oposición que quedan hacia arriba.
+</p>
+<br>
+<p>
+Al estar distribuidas aleatoriamente las componentes del vector de magnetización neta, dividiéndose en el plano x-y o plano transversal y el plano z o plano longitudinal. En el plano x-y, la suma neta de estas componentes será igual a cero porque se suman fuerzas magnéticas orientadas en direcciones opuestas, sin embargo, sobrevive la componente que apunta en dirección del campo B0 (eje z).
+</p>
+<img src="media/magnetizacion_neta_2.png" alt="" class="img img-responsive center-block">
+<p class="quote">
+Fuerza magnética sobrevive sólo para componente en el eje z, puesto que para los otros ejes, mis vectores se descomponen haciendo que A se cancele con su opuesta componente magnética A' y B con B'.
+</p>
+<br>
+<p>
+Esto significa que al colocar a un paciente en el imán del sistema de RM, el paciente mismo se convierte en un imán, es decir, tiene su propio campo magnético.
+Como hemos visto, el nuevo vector magnético debido al paciente, está en la dirección de las líneas del campo magnético externo (plano longitudinal). Este nuevo vector sería ideal para obtener una señal, sin embargo, no se puede medir la magnetización del paciente porque los campos están de forma paralela.
+</p>
+<br>
+<h3>PRECESIÓN</h3>
+<p>
+Los espines de los protones, al estar alineados en paralelo o anti paralelo respecto a las líneas del campo, pueden moverse alrededor de ellas, tomando la dirección del campo externo como el eje de rotación, describiendo un giro de forma cónica, llamado precesión.
+</p>
+<p>[AQUÍ VA ANIMACIÓN 1]</p>
+<br>
+<h3>FRECUENCIA DE LARMOR</h3>
+<p>
+La fuerza que tenga el campo externo (B0) y una constante de proporcionalidad del átomo implicado, la constante giromagnética γ (diferente para cada material, por ejemplo, el valor para protones es 42.5 MHz / T), determinando la rapidez con la que giran los espines. Esta relación está dada por la frecuencia de resonancia de Larmor (ω0) o frecuencia de precesión:
+ω0 = γB0/2π
+Esta expresión me representa la radiación electromagnética de una frecuencia determinada, al cambiar de estado el espín.
+</p>
+<br>
+<h3>EXCITACIÓN</h3>
+<p>La excitación modifica los niveles de energía y las fases de giro. Se hace por medio de ondas de radio, que son ondas electromagnéticas en una frecuencia específica y se mandan durante un periodo muy corto de tiempo, denominado pulso de radiofrecuencia (RF). Estos pulsos de RF llegan a alterar a los protones que están en precesión alineándose con el campo magnético externo, cuando están en la frecuencia adecuada para intercambiar energía.  Para esto debe tener la misma frecuencia; la misma "velocidad" que los protones, pues va a provocar un cambio en el estado de energía y la fase de los giros, dependiendo de la intensidad, forma de la onda y lo que dure el tiempo de RF.</p>
+<br><br>
+<p>El resultado de este intercambio de energía es que hay un brinco hacia el estado de energía mayor, yendo del estado paralelo al antiparalelo, que, viéndolo gráficamente como vectores, veríamos que hay un cambio en la magnetización neta, proyectándose sobre el plano XY al momento de recibir el pulso RF. El ángulo de inclinación está en función de la fuerza y la duración del pulso de RF electromagnético.</p>
+<p>[AQUÍ VA ANIMACIÓN 2]</p>
+<br>
+<p>Veremos que, durante la excitación, la componente del vector de magnetización neta en el plano longitudinal disminuirá notablemente, incluso hasta llegar a apuntar hacia abajo, mientras que aumentará en el plano transversal. Esto debido a que en el plano transversal se está alcanzando una coherencia de fase, mientras que, en el plano longitudinal, es por la diferencia de estado del número de espínes.</p>
+<img src="media/excitacion.png" alt="imagen excitacion" class="img img-responsive center-block">
+<p class="quote">La energía de RF se absorbe. <br> Un observador vería la espiral M0 hacia el plano XY (o incluso hacia el eje -Z).</p>
+<br>
+<h3>FENÓMENO DE RESONANCIA</h3>
+<p>
+Sabemos hasta ahora, que la frecuencia es posible calcularla con la ecuación de Larmor, esa es la adecuada para aplicar el pulso de RF. Y sólo cuando éste y los protones tienen la misma frecuencia, se podrán acoplar estas ondas, captando así los protones a la onda de radio, produciendo el fenómeno de resonancia.
+</p>
+<br>
+<p>
+Posteriormente, cuando ocurre este fenómeno, es porque los protones subieron a otro nivel de energía, modificando así, la magnetización del paciente. Esto pasa cuando los protones precesados logran sincronizarse con el pulso de RF, produciendo así que los protones apuntando hacia cada lado de forma aleatoria, se vayan cancelando y sólo sobrevivan las fuerzas magnéticas que, están “en fase”, como si los protones precesaran a pasos, apuntando hacia la misma dirección al mismo tiempo, sumándose. Como resultado, se disminuye la magnetización longitudinal (a lo largo del eje z) y se obtiene un vector magnético en dirección a los protones de precesión (apuntando sobre el plano x-y), es por eso que se llama “magnetización transversal”.
+</p>
+<img src="media/fenomeno_resonancia.png" alt="" class="img img-responsive center-block">
+<p class="quote">
+  (a)  Campo magnético externo fuerte sin RF. <br>
+  (b) Impulso de RF causa una nueva magnetización transversal mientras que la magnetización longitudinal disminuye. <br>
+  (c) Magnetización longitudinal puede desaparecer dependiendo del pulso de RF.
+</p>
+<br>
+<p>[AQUÍ VA ANIMACIÓN TRIPLE]</p>
+<br>
+<h3>TIEMPOS DE RELAJACIÓN</h3>
+<p>
+  Tiempo de repetición (TR) es la cantidad de tiempo entre sucesivas secuencias de impulsos aplicadas a la misma rebanada. Tiempo de Eco (TE) es el tiempo entre la entrega del impulso de RF y la recepción de la señal de eco.
+  El tejido puede ser caracterizado por dos tiempos de relajación diferentes - T1 y T2. T1 (tiempo de relajación longitudinal) es la constante de tiempo que determina la velocidad a la que los protones excitados vuelven al equilibrio. Es una medida del tiempo empleado para que los protones giratorios se realineen con el campo magnético externo. T2 (tiempo de relajación transversal) es la constante de tiempo que determina la velocidad a la que los protones excitados alcanzan el equilibrio o se desfasan entre sí. Es una medida del tiempo que toman los protones giratorios para perder la coherencia de fase entre los núcleos que giran perpendicularmente al campo principal.
+</p>
+
         </div>
         <div class="col-md-4 lil-text">
           <h4>En este capítulo</h4>
