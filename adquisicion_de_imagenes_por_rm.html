@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- AQUÍ VA EL TÍTULO DE LA PÁGINA -->
+    <title>Manual Electrónico RM</title>
+
+    <link href="docs/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IMPORTAR IMAGENES FAVICON -->
+
+
+<!-- IMAGENES PARA FACEBOOK -->
+<!-- IMAGENES PARA TWITTER -->
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script src="docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+
+  <!-- EMPIEZA EL DISEÑO
+    ========================================= -->
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Manual Electrónico RM</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Índice</a></li>
+              <!--
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- -->
+    <div class="container page">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Manual Electrónico de RM</h1>
+          <hr>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+        <h2>2. Introducción a la Técnica de Adquisición de Imágenes por Resonancia Magnética</h2>
+        <h3>2.1 El origen de la imágen por resonancia magnética: ESPÍN NUCLEAR</h3>
+<p>
+Para entender el fenómeno de la señal de Resonancia Magnética y la generación de imágenes por Resonancia Magnética (IRM) es necesario estudiar el comportamiento de los núcleos, y algunas de sus propiedades. El núcleo tiene una masa con  uno o más niveles de la energía (dependiendo de la clase del elemento empleado) y poseen un momento angular intrínseco llamado espín. El espín I está cuantizado para ciertos valores discretos. Estos valores dependen del número atómico y del peso atómico de cada núcleo. Dependiendo el valor del espín, una partícula puede tener un momento magnético µ (medida vectorial del torque ejercido sobre un sistema magnético cuando se aplica un campo magnético). Los elementos con peso atómico par (protones + neutrones), tienen un momento magnético nulo, mientras que los que tienen peso atómico impar, cuentan con un momento magnético. Un ejemplo de éstos es el hidrógeno, que presenta sólo un protón en su núcleo. Se tienen básicamente tres grupos de valores para I: cero, valores medios y valores enteros. El caso que interesa en IRM es cuando se tienen valores medios de I (p. ej. 1/2, 3/2, 5/2). Para entender el proceso de RM podemos hablar del núcleo de hidrógeno, en específico de los protones del núcleo de hidrógeno (La subpartícula del núcleo atómico de mayor importancia en IRM ). El núcleo de hidrogeno (1H) es la elección más simple, debido a que tiene un espín I cuyo valor es ½ y es el isótopo más abundante, y además al estar compuestos los tejidos del cuerpo humano de este material (es el compuesto presente en las moléculas de agua, que es lo que en su mayoría compone a los tejidos biológicos ), lo hacen el núcleo de elección para la adquisición de imágenes por RM. Para entender el origen de la señal por RM, es necesario emplear los principios de la mecánica cuántica, pero también la mayoría de los conceptos empleados, se pueden analizar con la ayuda de la mecánica clásica.
+</p>
+<br>
+<p>
+  Un núcleo que está girando actúa como un dipolo magnético µ (a menudo llamado espín nuclear), orientado en la dirección del eje de rotación. Estos espines pueden ser considerados como pequeños imanes con direcciones Norte/Sur (dos posibles estados de energía, paralelo +1/2 y antiparalelo -1/2), distribuyéndose aleatoriamente cuando no hay un campo magnético externo presente. Cualquier sistema de espines posee un momento magnético y es paralelo a su eje de rotación. Si el sistema de espines es expuesto a un campo magnético estático externo llamado B0, los protones son capaces de alinearse en la dirección del campo estático de manera paralela o antiparalela. La posición paralela es la más común debido a que se requiere menor energía para alinear un núcleo en esa dirección, por lo que hay un número ligeramente mayor de núcleos alineados en el sentido del campo magnético. Entre las posiciones de los núcleos alineados en forma paralela y antiparalela existe una diferencia de energía y se utiliza para detectar la señal de resonancia magnética.  La orientación del espín nuclear y la manipulación del momento magnético debido a ciertos procesos experimentales es lo que da origen a la señal de RM.
+</p>
+<br>
+<p>[Aquí va una imagen de espín sin campo y con campo magnético externo]</p>
+<br>
+<h3>2.2 VOLUMEN DE MAGNETIZACIÓN</h3>
+<p>
+  En medicina y en particular en IRM el término vóxel se usa para referirse a un volumen elemental de tejido, idealmente homogéneo en composición, cuya densidad de magnetización del protón puede ser representada por el brillo del pixel en la imagen. En este volumen se encuentran momentos magnéticos nucleares, debido a que se compone de una gran cantidad de moléculas abarcando algunos núcleos de hidrógeno, en donde cada uno tiene un momento magnético µ, cuya suma de momentos entre unidad de volumen se define como magnetización (M). Si el campo magnético no está presente, el momento magnético puede ser orientado aleatoriamente los espines están en estado de equilibrio y si los comparamos a cada uno de ellos como un vector, entonces tendrán una dirección diferente entre cada uno de ellos por lo que la magnetización neta será cero. Cuando el campo magnético estático es aplicado, el sistema de espines genera una magnetización neta que estará orientada en la dirección del campo magnético y tendrá dos componentes: magnetización longitudinal y magnetización transversal. En general las mediciones se realizan a partir de una colección de espines y no de un solo espín y el valor de la magnetización neta estará dado entonces por:
+</p>
+<br>
+Formulazo!!!!
+<br>
+<p>
+  donde M0 es la permeabilidad magnética en el vacío, g es la constante de radio giromagnética,  es la constante de Planck, kB es la constante de Boltzmann, T es la temperatura, c es el número de protones por unidad de volumen.
+</p>
+<h3>2.3 MAGNETIZACIÓN NETA</h3>
+<p>
+  En el núcleo atómico, cada espín paralelo (+1/2), se puede aparear con otro protón o neutrón, pero de espín antiparalelo (-1/2), haciendo que la suma de sus momentos magnéticos intrínsecos o espines sea cero bajo la presencia de un campo magnético externo B0. La suma de todos estos apareamientos, dependiendo del número de protones y neutrones, y el hecho de que la mayoría de ellos se encuentren en un estado de baja energía, me determinarán la magnetización neta (M), también representada por un vector. Es decir, es el resultado de la orientación total de los espines (volumen de magnetización) bajo un campo magnético estático.
+  La magnitud del vector de magnetización neta (M) es proporcional a la diferencia de poblaciones en el estado paralelo y antiparalelo al campo, es decir, en los estados +1/2 y -1/2, siendo un poco más los que estén alineados con el campo (+1/2), haciendo que el resultado neto sea la alineación con el campo externo.
+</p>
+<br>
+<img src="media/magnetizacion_neta.png" alt="imagen magnetización neta" class="img img-responsive">
+<p class="quote">
+  (a) Protones apuntando hacia abajo se cancelan con sus opuestos que apuntan hacia arriba. (b) Quedan cuatro protones sin oposición que quedan hacia arriba.
+</p>
+<br>
+<p>
+Al estar distribuidas aleatoriamente las componentes del vector de magnetización neta, dividiéndose en el plano x-y o plano transversal y el plano z o plano longitudinal. En el plano x-y, la suma neta de estas componentes será igual a cero porque se suman fuerzas magnéticas orientadas en direcciones opuestas, sin embargo, sobrevive la componente que apunta en dirección del campo B0 (eje z).
+</p>
+<img src="media/magnetizacion_neta_2.png" alt="" class="img img-responsive center-block">
+<p class="quote">
+Fuerza magnética sobrevive sólo para componente en el eje z, puesto que para los otros ejes, mis vectores se descomponen haciendo que A se cancele con su opuesta componente magnética A' y B con B'.
+</p>
+<br>
+<p>
+Esto significa que al colocar a un paciente en el imán del sistema de RM, el paciente mismo se convierte en un imán, es decir, tiene su propio campo magnético.
+Como hemos visto, el nuevo vector magnético debido al paciente, está en la dirección de las líneas del campo magnético externo (plano longitudinal). Este nuevo vector sería ideal para obtener una señal, sin embargo, no se puede medir la magnetización del paciente porque los campos están de forma paralela.
+</p>
+<br>
+<h3>2.4 PRECESIÓN</h3>
+<p>
+Los espines de los protones, al estar alineados en paralelo o anti paralelo respecto a las líneas del campo, pueden moverse alrededor de ellas, tomando la dirección del campo externo como el eje de rotación, describiendo un giro de forma cónica, llamado precesión.
+</p>
+<!-- SVG 1 -->
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 220" style="enable-background:new 0 0 300 220;" xml:space="preserve">
+  <g id="Vectores">
+    <g id="animacion-1">
+      <rect id="XMLID_43_" x="100.312" y="205.18" style="fill:none;" width="7.86" height="9.289"/>
+      <text id="XMLID_44_" transform="matrix(1 0 0 1 100.3115 213.7004)" style="font-family:'MyriadPro-Regular'; font-size:12px;">x</text>
+      <rect id="XMLID_46_" x="156.544" y="31.242" style="fill:none;" width="6.42" height="9.857"/>
+      <text id="XMLID_45_" transform="matrix(1 0 0 1 156.5439 39.7618)" style="font-family:'MyriadPro-Regular'; font-size:12px;">z</text>
+      <rect id="XMLID_48_" x="266.578" y="144.405" style="fill:none;" width="7.86" height="11.19"/>
+      <text id="XMLID_47_" transform="matrix(1 0 0 1 266.5778 152.925)" style="font-family:'MyriadPro-Regular'; font-size:12px;">y</text>
+      <g id="ejes_2_">
+        <polygon id="ejeZ" style="fill:#010202;" points="153.914,39.56 150,32.781 146.086,39.56 149.527,39.56 149.527,150
+          150.474,150 150.474,39.56       "/>
+        <polygon id="ejeY" style="fill:#010202;" points="264.819,150 258.04,146.086 258.04,149.526 150,149.526 150,150.474
+          258.04,150.474 258.04,153.914       "/>
+        <polygon id="ejeX" style="fill:#010202;" points="150.269,150.269 149.731,149.731 99.294,200.167 96.747,197.62 94.721,205.18
+          102.282,203.154 99.833,200.705      "/>
+      </g>
+      <g class="vector1" id="vector">
+
+          <rect id="XMLID_8_" x="168.24" y="72.041" transform="matrix(-0.8911 -0.4538 0.4538 -0.8911 267.6545 290.7615)" style="fill:#CD3333;stroke:#CD3333;stroke-width:0.9472;stroke-miterlimit:10;" width="0.947" height="82.451"/>
+        <polygon id="XMLID_9_" style="fill:#CD3333;stroke:#CD3333;stroke-width:0.9472;stroke-miterlimit:10;" points="190.347,70.085
+          183.895,74.516 190.959,77.888       "/>
+      </g>
+      <ellipse class="elipse" id="elipse" style="fill:none;stroke:#3C63AD;stroke-miterlimit:10;" cx="150.263" cy="70.085" rx="40.696" ry="15.804"/>
+    </g>
+  </g>
+</svg>
+<br>
+<h3>2.5 FRECUENCIA DE LARMOR</h3>
+<p>
+La fuerza que tenga el campo externo (B0) y una constante de proporcionalidad del átomo implicado, la constante giromagnética γ (diferente para cada material, por ejemplo, el valor para protones es 42.5 MHz / T), determinando la rapidez con la que giran los espines. Esta relación está dada por la frecuencia de resonancia de Larmor (ω0) o frecuencia de precesión:
+ω0 = γB0/2π <br>
+Esta expresión me representa la radiación electromagnética de una frecuencia determinada, al cambiar de estado el espín.
+</p>
+<br><br>
+<div class="row">
+  <div class="col-md-6 text-left"><a href="introduccion.html">Capítulo Anterior</a></div>
+  <div class="col-md-6 text-right"><a href="fenomeno_de_rmn.html">Capítulo Siguiente</a></div>
+</div>
+      </div>
+        <div class="col-md-4 lil-text">
+          <h4>En este capítulo</h4>
+          <hr>
+          <ul>
+            <li>2.1 El origen de la imágen por resonancia magnética: Espín Nuclear</li>
+            <li>2.2 Volumen de Magnetización</li>
+            <li>2.3 Magnetización Neta</li>
+            <li>2.4 Precesión</li>
+            <li>2.5 Frecuencia de Larmor</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <!-- -->
+
+
+<!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="docs/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Math stuff -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+
+  </body>
+</html>
