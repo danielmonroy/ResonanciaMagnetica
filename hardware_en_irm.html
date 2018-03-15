@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+<!-- AQUÍ VA EL TÍTULO DE LA PÁGINA -->
+    <title>Manual Electrónico RM</title>
+
+    <link href="docs/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- IMPORTAR IMAGENES FAVICON -->
+
+
+<!-- IMAGENES PARA FACEBOOK -->
+<!-- IMAGENES PARA TWITTER -->
+
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <script src="docs/assets/js/ie-emulation-modes-warning.js"></script>
+
+  </head>
+
+  <!-- EMPIEZA EL DISEÑO
+    ========================================= -->
+  <body>
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Manual Electrónico RM</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="index.html">Índice</a></li>
+              <!--
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            -->
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- -->
+    <div class="container page">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Manual Electrónico de RM</h1>
+          <hr>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+
+<h2>4. HARDWARE EN LA ADQUISICIÓN DE IMÁGENES POR RESONANCIA MAGNÉTICA</h2>
+<p>
+  En los primeros días, los escáneres eran el dominio de los físicos e ingenieros que los inventaron y construyeron, y la técnica se llamó imágenes de RMN (resonancia magnética nuclear). La técnica realmente despegó clínicamente cuando se eliminó la 'palabra con N'. Esto era sensato, ya que el término "nuclear", aunque científicamente preciso, implicaba una conexión con la energía nuclear y, en el último de los años de la guerra fría, resonó en la mente del público con el espectro de las armas nucleares.
+</p> <br>
+<p>
+  Sabemos hasta ahora, que la frecuencia es posible calcularla con la ecuación de Larmor, esa es la adecuada para aplicar el pulso de RF. Y sólo cuando éste y los protones tienen la misma frecuencia, se podrán acoplar estas ondas, captando así los protones a la onda de radio, produciendo el fenómeno de resonancia.
+</p>
+<br>
+<h3>4.1 TIPOS DE IMANES</h3>
+<p>El diseño en MRI es esencialmente determinado por el tipo y la forma del imán principal del sistema, existen los de tipo cerrado, túnel o abiertos.  El imán es básicamente el corazón del sistema. Además, entre más intenso es, el campo magnético generado será mayor; provocando así, una mejor obtención de la señal y disminuyendo el ruido generado. Las unidades con las que se mide el campo, son llamadas “unidades Gauss”, las cuales representan la medida de las líneas generadas por el campo.</p>
+<br>
+<p>Como se busca la uniformidad del campo, dependerá del imán utilizado:</p>
+<br>
+<ul>
+  <li>Imánes permanentes
+    <p>
+    Capaces de sostener campos de hasta 0.3 T.
+    Compuesto por componentes metálicos ferromagnéticos.
+    Tienen la ventaja de ser barato y fácil de mantener, son muy fuertes, pero son débiles en intensidad. </p>
+  </li>
+  <li>Imánes electromagnéticos
+    <ul>
+      <li>Superconductores <p>
+    Usados en sistemas de campo medio y alto (0.5 T o más)
+    Estos son los más utilizados y consisten en una bobina que se hace superconductor por helio líquido de refrigeración y sumergidos en nitrógeno líquido. Producir campos magnéticos fuertes y homogéneos, pero son caros y requieren rellenar el tanque de helio.</p></li>
+      <li>Resistivos y electroimanes <p>
+    Capaces de sostener campos de hasta 0.6 T <br>
+    Son más baratos y fáciles de mantener que los imanes superconductores, pero son mucho menos potentes, más energía y requieren un sistema de refrigeración.</p></li>
+    </ul>
+    </li>
+</ul>
+<p>
+  Para obtener el más homogéneo campo magnético, el imán debe estar finamente sintonizado ("equilibrado"), o pasivamente, con piezas móviles de metal, o activamente, usando bobinas electromagnéticas pequeñas distribuidas dentro del imán.
+</p>
+
+<br>
+
+<h3>4.2 QUENCH</h3>
+<p>En caso de pérdida de superconductividad, la energía eléctrica es disipada como calor. Este calentamiento se debe al “Quench”, que es el término utilizado cuando una sección del cableado regresa a su resistencia normal por cualquier motivo. No es más que la fuga de criogénicos en el interior de los equipos de MRI, ya que el calentamiento provoca una rápida ebullición de helio líquido que se transforma en un muy alto volumen de helio gaseoso. Durante este proceso, el imán deja de ser superconductor: el campo magnético desciende en cuestión de segundos. Si no se controla en cuestión de horas, se produce un calentamiento del criogénico producido en su interior y la propia máquina lo expulsa a través de una chimenea. Es importante tomar en cuenta que los criogénicos también se evaporan de manera natural. Para evitar quemaduras térmicas y/o asfixia, imanes superconductores tienen sistemas de seguridad: gas tuberías de evacuación, control del porcentaje de oxígeno y la temperatura dentro de la habitación de MRI, apertura hacia el exterior de la puerta.
+</p>
+<br>
+
+<h3>4.3 VENTAJAS Y DESVENTAJAS EN IRM</h3>
+<h4>VENTAJAS DE MRI</h4>
+<p>Se puede juntar con otros métodos de imagen, para poder tomar a la vez, signos vitales, pero es importante que se cheque tanto compatibilidad, como correcta obtención de señales.</p>
+<br>
+
+<h4>DESVENTAJAS DE MRI</h4>
+<ul>
+<li>El sonido producido en los sistemas de MRI son debido a los gradientes, que provocan cambios lineales en el campo /(+) o \(-), para invertir la dirección de la corriente.</li>
+<li>Puede haber una interferencia de RF con las señales obtenidas.</li>
+<li>Hay riesgo de quemar al paciente al exponerlo por un tiempo prolongado, o por componentes de sus tatuajes.</li>
+</ul>
+<br>
+
+<h3>4.4 BLINDAJE</h3>
+<p>Debe siempre haber presente un blindaje, tanto en el cuarto, como en el sistema:</p>
+<ul><li>Blindaje pasivo</li></ul>
+<p>Envoltura de hierro sobre el imán, para delimitar al campo.</p>
+<ul><li>Blindaje activo</li></ul>
+<p>Al centro del imán hay una bobina principal, y lo que hago es agregar más bobinas alrededor, haciendo que se sumen los campos generados.
+</p>
+<br>
+<h3>4.5 FRINGE FIELD O CAMPO DE FRANJA</h3>
+<p>Es la delimitación del campo magnético alrededor del sistema y utiliza para prevenir atracción de objetos metálicos y para que no pueda afectarse las señales obtenidas. Alrededor de los 5G se considera seguro.
+</p>
+<br>
+<h3>4.6 GRADIENTES</h3>
+<p>El término "gradiente" se refiere a un espacio adicional, generando una variación lineal sobre una dirección de la intensidad del campo magnético estático, modificando así al campo magnético principal que es más potente. La intensidad del campo de gradiente se mide en militesla por metro (mTm-1). Esta variación es producida por dos bobinas que se encuentran en cada una de las direcciones. La dirección a la que apunta el campo magnético principal no se modifica, más bien, se suman al campo magnético principal B0, que se siente a lo largo de cada dirección, modificando la frecuencia de precesión, que sigue dándose por la frecuencia de Larmor y afecta también la dispersión de las fases de giro.  Además, es homogénea su acción sobre el plano perpendicular a donde se aplica. Normalmente se aplican solo por un corto tiempo como pulsos. Son estos tres conjuntos de gradientes que le dan a MR su capacidad de dimensión tridimensional. Por ejemplo, un 'x gradiente' (Gx) se sumará o restará de la magnitud del campo estático en diferentes puntos a lo largo del eje x.
+</p>
+<br>
+<p>
+  La imagen 5 representa la acción de los gradientes sobre cada dirección, afectando así las intensidades que resienten cada uno de los espines, dependiendo su posición. Por ejemplo, en el centro (x = 0) el campo total experimentado por los núcleos es simplemente B0, girando así a la frecuencia de Larmor; en cambio, conforme te mueves a lo largo de la dirección x, aumentará o disminuirá linealmente, provocando que los protones resuenen o más lento, o más rápido, dependiendo de su posición; y, conforme se va detectando la precesión, se registrará como mayor o menor frecuencia en la señal MR. Tomando estas diferencias en las frecuencias, es posible distinguir las distintas señales de MRI en distintas posiciones del espacio.
+</p>
+<img src="media/colors.jpg" alt="" class="img img-responsive center-block">
+<p class="quote">IMAGEN 5- Gradientes en cada una de la direcciones, que componen al sistema de MRI.</p>
+<br>
+<h3>4.7 SHIMMING</h3>
+<p>Sabemos bien que el campo magnético producido en el sistema, no es homogéneo, por lo que hay una manera de solucionar este problema por medio de 2 técnicas.</p>
+<p>1.
+1. Shimming pasivo. Éste se compone de placas metálicas, que te permiten controlar así el campo magnético. <br>
+2. Shimming activo. En éste, se logra meter energía al sistema por medio de más bobinas, logrando mejorar y homogeneizar el campo generado por la primera bobina, haciendo así que por una mezcla se señales generadas, se obtenga una casi ideal. Tomando en cuenta que no deben presentarse armónicos, para no interferir entre señales.
+</p>
+<p>En la parte clínica, este proceso del shimming ya está automatizado en el sistema, haciéndolo cada vez que se toma un estudio, pues cuando el sujeto está dentro del sistema, afectará directamente el campo generado en el mismo.
+</p>
+<br>
+<h3>4.8 RADIOFRECUENCIA</h3>
+<p>Este sistema de radiofrecuencia se compone de antenas, que son los únicos componentes que podemos modificar, involucradas en la excitación de los núcleos y sirven únicamente para transmitir y recibir información por medio de ondas de radiofrecuencia. Involucrados en la selección de cortes, la excitación de núcleos, aplicación de los gradientes y la adquisición de señales.
+</p>
+<p>Las bobinas son fundamentales para el sistema de radiofrecuencia, ya que permitirán que la excitación sea uniforme sobre todo el volumen a explorar. Éstas deben tener una baja relación señal a ruido y alta sensibilidad.
+</p>
+
+<p>Existen varios tipos de antenas para un sistema de Radiofrecuencia:</p>
+<ul>
+  <li>
+    <b>Bobinas emisoras y receptoras "regulares".</b>
+    <p>
+    Se debe llenar la bobina tanto como sea posible, debería tener un factor de relleno superior al 70%. <br>
+    El campo magnético oscilante (B1) de la bobina de RF tiene que ser perpendicular al campo magnético principal (B0) generado por el imán para que los espines sean excitados. <br>
+    La configuración más común es que el campo principal esté orientado a lo largo del eje del imán por lo que la bobina debe producir un campo perpendicular al mismo. <br>
+    Estas están formadas por espirales de alambre de baja resistencia, generalmente cobre. La geometría de las espirales es muy importante para una excitación adecuada, permitiendo recibir una adecuada detección de la señal. <br>
+    </p>
+  </li>
+</ul>
+      <br><br>
+          <div class="row">
+            <div class="col-md-6 text-left"><a href="introduccion.html">Capítulo Anterior</a></div>
+            <div class="col-md-6 text-right"></div>
+          </div>
+        </div>
+        <div class="col-md-4 lil-text">
+          <h4>En este capítulo</h4>
+          <hr>
+          <ul>
+            <li>4.1 Tipos de imánes</li>
+            <li>4.2 Quench</li>
+            <li>4.3 Ventajas y Desventajas en IRM</li>
+            <li>4.4 Blindaje</li>
+            <li>4.5 Fringe Field o Campo de Franja</li>
+            <li>4.6 Gradientes</li>
+            <li>4.7 Shimming</li>
+            <li>4.8 Radiofrecuencia</li>
+            <li>4.9 Jaula de Faraday</li>
+            <li>4.10 SAR (Tasa o índice de Absorción Específica)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <!-- -->
+
+
+<!-- JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="docs/dist/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="docs/assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- Math stuff -->
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$$','$$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+    </script>
+
+  </body>
+</html>

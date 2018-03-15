@@ -25,6 +25,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:700');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Catamaran:400,500,600,700,800');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6794,6 +6795,49 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #edeff0;
 }
+body.prometeo {
+  background: linear-gradient(to right, #114357, #F29492);
+  /*
+	background-image: url('media/prometeo.jpg');
+	background-size: cover;
+	background-position: top;
+	*/
+}
+.portrait {
+  height: 200px;
+  width: 100%;
+}
+#cursos {
+  background-image: url("media/ciencias.jpg");
+  background-size: cover;
+}
+#manuales {
+  background-image: url("media/Terranova.jpeg");
+  background-size: cover;
+}
+#nosotros {
+  background-image: url("media/cu.jpg");
+  background-size: cover;
+}
+div.thumbnail-card {
+  background-color: white;
+  padding: 0.5em;
+  font-family: 'Catamaran', sans-serif;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+div.thumbnail-card h3 {
+  font-weight: 700;
+}
+div.thumbnail-card:hover,
+.thumbnail-card:focus {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+.thumbnail-card > .caption-top > h3 {
+  font-weight: 600;
+  font-size: 1em;
+}
 .navbar {
   background-color: #3e474f;
 }
@@ -6813,6 +6857,12 @@ body {
   font-weight: bold;
   font-style: italic;
   color: gray;
+}
+section.footer {
+  padding: 2em 0 1em 0;
+  background-color: #333;
+  color: white;
+  font-size: 10px;
 }
 .elipse {
   fill-opacity: 0;
